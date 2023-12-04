@@ -1,2 +1,3 @@
-# AdventOfCode2023
-Code solutions to Advent of Code 2023, written in MiniScript
+# AoC-2023
+
+MiniScript code for the [Advent of Code 2023](https://adventofcode.com/2023) challenges.
