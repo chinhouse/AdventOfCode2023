@@ -43,6 +43,7 @@ while curNode != "ZZZ"
 end while
 print "Day 8, part 1: " + count
 
+//part 2
 counts = []
 endsA = []
 for n in nodes
