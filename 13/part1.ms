@@ -26,14 +26,10 @@ end function
 
 reflectLine = function(block, target = 0)
 	for r in range(1, block.len - 1)
-		diff = 0
-		rows1 = block[:r].reversed
-		rows2 = block[r:]
-		m = [rows1.len, rows2.len].sort[0] 
-		for rr in range(0,m-1)
-			diff += differences(rows1[rr], rows2[rr])
-		end for
-		if diff == target then return r
+		rows1 = block[:r].reversed.join("")
+		rows2 = block[r:].join("")
+		m = [rows1.len, rows2.len].sort[0]
+		if target == differences(rows1[0:m], rows2[0:m]) then return r
 	end for
 	return 0
 end function
